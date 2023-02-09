@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4b4c031a.chunk.css",
+    "main.js": "/static/js/main.cc1053e8.chunk.js",
+    "main.js.map": "/static/js/main.cc1053e8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.addbe8b0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.addbe8b0.js.map",
+    "static/js/2.0492aa29.chunk.js": "/static/js/2.0492aa29.chunk.js",
+    "static/js/2.0492aa29.chunk.js.map": "/static/js/2.0492aa29.chunk.js.map",
+    "static/js/3.a84f3442.chunk.js": "/static/js/3.a84f3442.chunk.js",
+    "static/js/3.a84f3442.chunk.js.map": "/static/js/3.a84f3442.chunk.js.map",
+    "static/js/4.5d5a41bc.chunk.js": "/static/js/4.5d5a41bc.chunk.js",
+    "static/js/4.5d5a41bc.chunk.js.map": "/static/js/4.5d5a41bc.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.4b4c031a.chunk.css.map": "/static/css/main.4b4c031a.chunk.css.map",
+    "static/js/2.0492aa29.chunk.js.LICENSE.txt": "/static/js/2.0492aa29.chunk.js.LICENSE.txt",
+    "static/media/Volt Frauen auf der Kennedy Brücke.jpg": "/static/media/Volt Frauen auf der Kennedy Brücke.fb9a88db.jpg",
+    "static/media/de.ftl": "/static/media/de.6352cafc.ftl",
+    "static/media/en.ftl": "/static/media/en.360ca581.ftl",
+    "static/media/image-1.jpg": "/static/media/image-1.1a7f7139.jpg",
+    "static/media/image.jpg": "/static/media/image.ae23e239.jpg",
+    "static/media/index.css": "/static/media/ubuntu-v20-latin-regular.f00252d5.svg",
+    "static/media/App.css": "/static/media/volt_heart.e6b3f0e6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.addbe8b0.js",
+    "static/js/2.0492aa29.chunk.js",
+    "static/css/main.4b4c031a.chunk.css",
+    "static/js/main.cc1053e8.chunk.js"
+  ]
+}
