@@ -1,0 +1,117 @@
+.app_wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
+	min-height: 100vh;
+	height: auto;
+	padding: 60px 40px;
+}
+@media (min-height: 800px) {
+	.app_wrapper {
+		padding: 80px 40px;
+	}
+}
+
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 400px;
+	max-width: 100%;
+	aspect-ratio: 1/1;
+	background-image: url(../images/volt_heart.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.tab_content {
+	display: block;
+	text-align: start;
+	width: var(--content-box-width); /* same as header text */
+	max-width: 100%;
+}
+
+.links_grid {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-gap: 40px 40px;
+	align-items: flex-start;
+}
+.links_grid h3 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.links_grid h3.no_flex {
+	display: block;
+}
+@media (max-width: 600px) {
+	.links_grid {
+		grid-template-columns: auto;
+		grid-gap: 10px;
+	}
+	.links_grid :nth-child(even) {
+		margin-block-end: 30px;
+	}
+}
+
+a.link_box {
+	display: block;
+
+	background: var(--text-color);
+	color: var(--background-color);
+
+	border-radius: 10px;
+
+	width: var(--content-box-width);
+	max-width: 100%;
+	padding: 40px;
+	margin-block-start: 80px;
+
+	transition: box-shadow 0.2s ease;
+}
+a.link_box h2 {
+	margin-block-end: 10px;
+}
+a.link_box:hover {
+	background: var(--text-color);
+	color: var(--background-color);
+	box-shadow: 0 0 0 10px var(--primary-color);
+	text-decoration: none;
+}
+a.link_box p:last-child {
+	margin-block-end: 0;
+}
+
+.tab_content.article h2 {
+	margin-block-end: 10px;
+}
+.tab_content.article h2 + p {
+	margin-block-end: 40px;
+}
+.tab_content.article h3 {
+	font-size: 30px;
+	letter-spacing: 0.5px;
+	margin-block-start: 40px;
+}
+.tag_row {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.center_box {
+	width: 800px;
+	max-width: 100%;
+}
