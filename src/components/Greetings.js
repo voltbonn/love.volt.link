@@ -143,6 +143,7 @@ Happy Valentine's day from Brescia to all Europe lovers!`,
     title: 'Veel liefs uit Groningen!',
     text: 'Wij wensen iedereen happy valentijn!',
     images: [
+      'original_f3b061f9-9dee-4ab5-b6e2-2b2593705ef4_20230125_221906.jpg',
       'image.jpg',
     ],
   },
