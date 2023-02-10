@@ -113,6 +113,7 @@
 }
 
 
+/*
 :root {
   --text-color: #502379;
   --background-color: #fff;
@@ -126,6 +127,12 @@
     --background-color: #502379;
     --primary-color: #fff;
   }
+}
+*/
+:root {
+  --text-color: #fff;
+  --background-color: #502379;
+  --primary-color: #fff;
 }
 
 :root {
