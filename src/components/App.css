@@ -176,14 +176,14 @@ nav {
 	background-repeat: no-repeat;
 	background-image: var(--image-src);
 	filter: 
-    drop-shadow( 2px  0px 0 var(--purple-dark))
-		drop-shadow( 2px  2px 0 var(--purple-dark))
-    drop-shadow( 0px  2px 0 var(--purple-dark))
-    drop-shadow(-2px  0px 0 var(--purple-dark))
-    drop-shadow(-2px -2px 0 var(--purple-dark))
-    drop-shadow( 0px -2px 0 var(--purple-dark))
-    drop-shadow( 2px -2px 0 var(--purple-dark))
-    drop-shadow(-2px  2px 0 var(--purple-dark))
+    drop-shadow( 1px  0px 0 var(--purple-dark))
+		drop-shadow( 1px  1px 0 var(--purple-dark))
+    drop-shadow( 0px  1px 0 var(--purple-dark))
+    drop-shadow(-1px  0px 0 var(--purple-dark))
+    drop-shadow(-1px -1px 0 var(--purple-dark))
+    drop-shadow( 0px -1px 0 var(--purple-dark))
+    drop-shadow( 1px -1px 0 var(--purple-dark))
+    drop-shadow(-1px  1px 0 var(--purple-dark))
 	;
 }
 .decoration.pos_top_left {
