@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom' // Link, NavLink
 import { Helmet } from 'react-helmet'
 
 import { Localized, useLocalization } from '../../fluent/Localized.js'
-import Wishes from '../Wishes.js'
+import Greetings from '../Greetings.js'
 
 export default function Welcome() {
 
@@ -61,7 +61,7 @@ export default function Welcome() {
         />
     </div>
 
-    <Wishes />
+    <Greetings />
 
     <div alt="Future made in Europe" className="slogan"></div>
 
