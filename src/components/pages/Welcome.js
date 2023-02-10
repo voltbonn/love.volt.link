@@ -27,12 +27,12 @@ export default function Welcome() {
       <meta name="twitter:description" content={website_description} />
     </Helmet>
 
-    <div alt="logo" className="logo"></div>
-    <h1 className="center_box" style={{ textAlign: 'center' }}>
-      <Localized id="website_title" />
-    </h1>
+    <header>
 
-    <br />
+      <div alt="logo" className="logo"></div>
+      <h1 className="center_box" style={{ textAlign: 'center' }}>
+        <Localized id="website_title" />
+      </h1>
 
     </header>
 

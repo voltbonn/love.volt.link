@@ -14,6 +14,46 @@
 	}
 }
 
+header {
+	position: relative;
+	width: 100vw;
+	margin: -80px -40px 0 -40px;
+	padding: 0 var(--basis_x2);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--basis_x2);
+}
+header:before {
+	content: "";
+	z-index: -2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/Volt_Backgrounds_Valentin.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+header:after {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(0deg, var(--purple) 0%, rgba(0,0,0,0) 100%);	
+}
+header h1 {
+	margin: 0;
+}
+
 .logo {
 	display: inline-block;
 	vertical-align: middle;
