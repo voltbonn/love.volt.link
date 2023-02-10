@@ -1,2 +1,0 @@
-(this["webpackJsonplove.volt.link"]=this["webpackJsonplove.volt.link"]||[]).push([[3],{58:function(t,e,i){"use strict";i.r(e),e.default=i.p+"static/media/de.6352cafc.ftl"}}]);
-//# sourceMappingURL=3.a84f3442.chunk.js.map
