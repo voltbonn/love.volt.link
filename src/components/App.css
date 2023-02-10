@@ -120,6 +120,7 @@ nav {
 .greeting .photo {
 	box-shadow: 10px 10px 0 0 var(--purple-dark);
 }
+
 .greeting .text {
 	z-index: 1;
 	transform: rotate(1deg);
