@@ -248,7 +248,7 @@ nav {
     drop-shadow(-1px  1px 0 var(--purple-dark))
 	;
 }
-@media (max-width: 600px) {
+@media (min-width: 600px) {
 	.decoration:before {
 		animation: slight_movemnet 1.75s ease-in-out infinite alternate;
 		animation-delay: var(--animation-delay, 0);
