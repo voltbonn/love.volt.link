@@ -247,10 +247,10 @@ nav {
 }
 @keyframes scatter {
   0% {
-    top: 0;
+    transform: translateY(0);
   }
   100% {
-    top: -10px;
+    transform: translateY(-10px);
   }
 }
 
