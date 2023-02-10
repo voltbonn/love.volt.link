@@ -269,25 +269,25 @@ nav {
 			width: 100%;
 		}
 	}
-	
+
 	.masonry-grid-col {
 		width: 100%;
 	  flex-grow: 1;
 	}
-	
+
 	/* 2 columns by default, hide columns 2 & 3 */
 	.masonry-grid-col--1, .masonry-grid-col--2, .masonry-grid-col--3 { display: none }
-	
+
 	/* 3 columns at medium size */
 	@media ( min-width: 500px ) {
 	  .masonry-grid-col--1 { display: block; } /* show column 2 */
 	}
-	
+
 	/* 3 columns at medium size */
 	@media ( min-width: 800px ) {
 	  .masonry-grid-col--2 { display: block; } /* show column 2 */
 	}
-	
+
 	/* 4 columns at large size */
 	@media ( min-width: 1500px ) {
 	  .masonry-grid-col--3 { display: block; } /* show column 3 */
