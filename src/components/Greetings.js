@@ -26,7 +26,7 @@ let decorations_tmp = [
   '1f49c.svg',
   '1f49d.svg',
   '1f49e.svg',
-  '1f308.svg',
+  // '1f308.svg', // rainbow (it does not look so good)
   '1f381.svg',
   '1f490.svg',
   '1f495.svg',
@@ -39,8 +39,9 @@ let decorations_tmp = [
   '26a1.svg',
   '2728.svg',
   '2764.svg',
+  '1f3f3-fe0f-200d-1f308.svg', // pride flag
 ]
-  .map(async decoration => await lazyLoadImage(`decorations/${decoration}`))
+  .map(async decoration => await lazyLoadImage(`decorations/volt/${decoration}`))
 
 function Decoration() {
   const [decorationSrc, setDecorationSrc] = useState([])
