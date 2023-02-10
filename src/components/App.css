@@ -79,9 +79,9 @@ header h1 {
 	display: block;
 	width: calc(100% - var(--basis_x8));
 	max-width: 100%;
-	aspect-ratio: 1280/107;
+	aspect-ratio: 12/1; /* 5975/498 ~= 12/1 */
 	margin-block-start: var(--basis_x4);
-	background-image: url(../images/slogan.png);
+	background-image: url(../images/volt_claim.svg);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
