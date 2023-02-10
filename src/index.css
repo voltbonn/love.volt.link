@@ -145,10 +145,10 @@
 }
 
 body {
-  background: var(--background-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-family-text);
-  transition: color .2s ease, background .2s ease;
+  transition: color .2s ease, background-color .2s ease;
   padding-block-end: 25vh;
   overflow-x: hidden;
 }
