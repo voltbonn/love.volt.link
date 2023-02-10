@@ -21,6 +21,6 @@ into_text =
   <br />
   <strong>Entdecke die vielen Orte, an denen Du uns finden kannst, und werde Teil unserer paneuropäischen Bewegung.</strong><br />
   <br />
-  Auf ewig Dein,
+  In Liebe,<br />
   <strong>Volt Europa</strong><br />
   💜
