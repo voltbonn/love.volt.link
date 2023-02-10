@@ -135,6 +135,7 @@ nav {
 	width: calc(100% - var(--basis_x2));
 	max-width: calc(100% - var(--basis_x2));
 	margin-block-start: calc(-1 * var(--basis_x2));
+	filter: saturate(1.2) contrast(1.05) brightness(1.1);
 }
 
 .greeting .photo:nth-child(2) {
