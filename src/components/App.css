@@ -241,11 +241,12 @@ nav {
     drop-shadow( 1px -1px 0 var(--purple-dark))
     drop-shadow(-1px  1px 0 var(--purple-dark))
 	;
-	animation: scatter 1.75s ease-in-out infinite alternate;
+
+	animation: slight_movemnet 1.75s ease-in-out infinite alternate;
 	animation-delay: var(--animation-delay, 0);
 	animation-duration: var(--animation-duration, 1.75s);
 }
-@keyframes scatter {
+@keyframes slight_movemnet {
   0% {
     transform: translateY(0);
   }
