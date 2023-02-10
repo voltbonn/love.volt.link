@@ -265,6 +265,8 @@ nav {
 .masonry-grid {
 	width: calc(100% - var(--basis_x4));
 }
+.masonry-grid-col--1, .masonry-grid-col--2, .masonry-grid-col--3 { display: none }
+
 @media (min-width: 500px) {
 	/* with flexbox */
 	.masonry-grid {
