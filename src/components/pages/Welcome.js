@@ -25,6 +25,10 @@ export default function Welcome() {
       <meta name="description" content={website_description} />
       <meta name="og:description" content={website_description} />
       <meta name="twitter:description" content={website_description} />
+
+      <meta name="og:type" content="website" />
+      <meta name="og:url" content="https://love.volt.link/" />
+      <meta name="og:image" content="https://love.volt.link/meta_image.jpg" />
     </Helmet>
 
     <header>
