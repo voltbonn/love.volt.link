@@ -13,18 +13,14 @@ imprint = Impressum
 privacy_policy = Datenschutz Erklärung
 
 into_text = 
-  <p_one>Lieben wir unsere Mitmenschen?</p_one>
-  <p>Gerade diejenigen, die es am meisten brauchen?</p>
-
-  <p>Behandeln wir unsere Familien gut?</p>
-  <p>Können wir von der Ferne lieben?</p>
-
-  <p_one>Wenn Likes und Herzen Liebe und Bewunderung ausdrücken,</p_one>
-  <p>können wir digitale Aktionen in physische Bedeutung übersetzen?</p>
-
-  <p>Können wir uns vernetzen, wenn es wichtig ist?</p>
-  
-  <h2>An Valentinstag möchte Volt Europa alle verbinden:</h2>
-
-  <p>Volt Europa ist ein pan-europäische Bewegung, die für eine bessere Zukunft und Liebe für alle steht.</p>
-  <p>Schau dir einige Orte an, wo du uns finden kannst!</p>
+  <strong>Mein liebstes Europa,</strong><br />
+  <br />
+  Am heutigen Valentinstag entfacht Volt Europa unsere Liebe zu Dir neu und verbindet Menschen auf dem ganzen Kontinent. Wie Zeus in der griechischen Mythologie haben wir <strong>uns in Europa verliebt</strong>, und der Valentinstag ist eine Gelegenheit, unsere Liebe nicht nur gegenüber unseren Liebsten zum Ausdruck zu bringen, sondern auch gegenüber unseren Mitmenschen, besonders denen in Not.<br />
+  <br />
+  Auch wenn Likes und Herzen in den Sozialen Medien für Liebe und Bewunderung stehen, wollen wir digitale Aktionen in konkrete Taten umsetzen und uns engagieren, wenn es darauf ankommt. Mach mit und tritt mit uns für eine bessere Zukunft und Liebe für alle ein.<br />
+  <br />
+  <strong>Entdecke die vielen Orte, an denen Du uns finden kannst, und werde Teil unserer paneuropäischen Bewegung.</strong><br />
+  <br />
+  Auf ewig Dein,
+  <strong>Volt Europa</strong><br />
+  💜

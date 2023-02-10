@@ -66,6 +66,21 @@ nav {
 	max-width: 100%;
 }
 
+
+.intro_letter {
+	width: 600px;
+	max-width: 100%;
+
+	padding: var(--basis_x2);
+	background: var(--gray-light);
+	color: var(--purple);
+	box-shadow: 10px 10px 0 0 var(--purple-darker);
+
+  margin-block-start: var(--basis_x2);
+  margin-block-end: var(--basis_x2);
+}
+
+
 .greetings {
 	width: 100%;
 

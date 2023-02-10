@@ -13,18 +13,14 @@ imprint = Imprint
 privacy_policy = Privacy Policy
 
 into_text = 
-  <p_one>Do we LOVE our fellow human beings?</p_one>
-  <p>Especially the ones in need?</p>
-
-  <p>Do we treat our families well?</p>
-  <p>Are we able to love from a distance?</p>
-
-  <p_one>If likes and hearts signify love and admiration,</p_one>
-  <p>can we translate digital action to physical meaning?</p>
-
-  <p>Can we connect when it matters?</p>
-  
-  <h2>On Valentine's Day, Volt wants to connect all across Europe:</h2>
-
-  <p>Volt Europa is a pan-european movement which stands up for a better future and love for all.</p>
-  <p>Have a look at some of the many places where you can find us!</p>
+  <strong>My Dearest Europe,</strong><br />
+  <br />
+  This Valentine's Day, Volt Europa is reigniting our love for you and connecting people across the continent. Just like Zeus in Greek mythology, <strong>we have fallen in love with Europe</strong>, and Valentine's Day is an opportunity to express our love not only to our loved ones but also to our fellow human beings, especially those in need.<br />
+  <br />
+  While likes and hearts may signify love and admiration on social media, we aim to translate digital actions into physical meaning and connect when it matters. Join us in our mission to stand up for a better future and love for all.<br />
+  <br />
+  <strong>Discover the many places where you can find us and be a part of our pan-European movement.</strong><br />
+  <br />
+  Yours always,<br />
+  <strong>Volt Europa</strong><br />
+  💜
