@@ -15,6 +15,14 @@ async function lazyLoadImage (imageName) {
   }
 };
 
+const fisherYatesShuffel = (toShuffle = []) => {
+  for (let i = (toShuffle.length - 1); i > 0; i -= 1) {
+    const randomIndex = Math.floor(Math.random() * (i + 1));
+    [toShuffle[i], toShuffle[randomIndex]] = [toShuffle[randomIndex], toShuffle[i]];
+  }
+  return toShuffle;
+}
+
 let decorations_tmp = [
   '1f31f.svg',
   '1f48b.svg',
@@ -51,7 +59,7 @@ function Decoration() {
 
   useEffect(() => {
     Promise.all(decorations_tmp).then(decorations => {
-      const random_decoration = decorations[Math.floor(Math.random() * decorations.length)]
+      const random_decoration = fisherYatesShuffel([...decorations])[0]
       setDecorationSrc(random_decoration)
 
       const pos_classes = [
@@ -60,7 +68,7 @@ function Decoration() {
         'pos_middle_right',
         'pos_middle_left',
       ]
-      const random_pos_class = pos_classes[Math.floor(Math.random() * pos_classes.length)]
+      const random_pos_class = fisherYatesShuffel(pos_classes)[0]
       setPosClass(random_pos_class)
 
       const random_animation_delay = Math.round(Math.random() * 10)*0.1
