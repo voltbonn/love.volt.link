@@ -312,6 +312,15 @@ Gelijkheid is een pijler van onze Europese beweging. Als Volt Den Haag wensen wi
     ],
   },
   {
+    key: 'Salzburg',
+    title: 'Frohen Valentinstag aus Salzburg!',
+    text: `Du bist in Salzburg zuhause aber dein Herz schlägt für Europa?
+    Dann #JointheChange`,
+    images: [
+      '325054502_1816029828770764_457064908353054901_n.jpg',
+    ],
+  },
+  {
     key: 'Strasbourg_Kehl',
     title: 'Bons baisers de Strasbourg/Kehl!',
     text: '',
