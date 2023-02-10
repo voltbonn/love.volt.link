@@ -1,0 +1,2 @@
+(this["webpackJsonplove.volt.link"]=this["webpackJsonplove.volt.link"]||[]).push([[60],{113:function(e,t,n){"use strict";n.r(t),t.default=n.p+"static/media/Volt Frauen auf der Kennedy Br\xfccke.fb9a88db.jpg"}}]);
+//# sourceMappingURL=60.a947dd6d.chunk.js.map
