@@ -260,40 +260,41 @@ nav {
 
 
 
-
-/* with flexbox */
-.masonry-grid {
-	width: calc(100% - var(--basis_x8));
-  display: flex;
-	justify-content: space-between;
-	gap: var(--basis_x4);
-	margin: 0 auto;
-}
-@media (max-width: 1200px) {
+@media (min-width: 600px) {
+	/* with flexbox */
 	.masonry-grid {
-		width: 100%;
+		width: calc(100% - var(--basis_x8));
+	  display: flex;
+		justify-content: space-between;
+		gap: var(--basis_x4);
+		margin: 0 auto;
 	}
-}
-
-.masonry-grid-col {
-	width: 100%;
-  flex-grow: 1;
-}
-
-/* 2 columns by default, hide columns 2 & 3 */
-.masonry-grid-col--1, .masonry-grid-col--2, .masonry-grid-col--3 { display: none }
-
-/* 3 columns at medium size */
-@media ( min-width: 500px ) {
-  .masonry-grid-col--1 { display: block; } /* show column 2 */
-}
-
-/* 3 columns at medium size */
-@media ( min-width: 800px ) {
-  .masonry-grid-col--2 { display: block; } /* show column 2 */
-}
-
-/* 4 columns at large size */
-@media ( min-width: 1500px ) {
-  .masonry-grid-col--3 { display: block; } /* show column 3 */
+	@media (max-width: 1200px) {
+		.masonry-grid {
+			width: 100%;
+		}
+	}
+	
+	.masonry-grid-col {
+		width: 100%;
+	  flex-grow: 1;
+	}
+	
+	/* 2 columns by default, hide columns 2 & 3 */
+	.masonry-grid-col--1, .masonry-grid-col--2, .masonry-grid-col--3 { display: none }
+	
+	/* 3 columns at medium size */
+	@media ( min-width: 500px ) {
+	  .masonry-grid-col--1 { display: block; } /* show column 2 */
+	}
+	
+	/* 3 columns at medium size */
+	@media ( min-width: 800px ) {
+	  .masonry-grid-col--2 { display: block; } /* show column 2 */
+	}
+	
+	/* 4 columns at large size */
+	@media ( min-width: 1500px ) {
+	  .masonry-grid-col--3 { display: block; } /* show column 3 */
+	}
 }
