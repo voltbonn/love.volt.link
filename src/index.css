@@ -150,6 +150,7 @@ body {
   font-family: var(--font-family-text);
   transition: color .2s ease, background .2s ease;
   padding-block-end: 25vh;
+  overflow-x: hidden;
 }
 
 h1 {
