@@ -34,14 +34,10 @@ export default function Welcome() {
 
     <br />
 
-    <nav>
-      {/* <NavLink to="/"><button>Hi!</button></NavLink> */}
-      <a href={join_link_href} target="_blank" rel="noreferrer"><button>
-        <Localized id="join_link" />
-      </button></a>
-      {/* <NavLink to="follow"><button>Follow</button></NavLink> */}
-    </nav>
+    </header>
 
+    <br />
+    <br />
     <br />
 
     <div className="intro_letter">
@@ -57,6 +53,18 @@ export default function Welcome() {
         }}
         />
     </div>
+
+    <nav style={{
+      marginBlockEnd: 'var(--basis_x4)',
+    }}>
+      {/* <NavLink to="/"><button>Hi!</button></NavLink> */}
+      <a href={join_link_href} target="_blank" rel="noreferrer"><button>
+        <Localized id="join_link" />
+      </button></a>
+      {/* <NavLink to="follow"><button>Follow</button></NavLink> */}
+    </nav>
+
+    <br />
 
     <Greetings />
 
