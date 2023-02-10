@@ -196,11 +196,6 @@ nav {
 	position: absolute;
 	width: var(--basis_x4);
 	height: var(--basis_x4);
-	/* background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-image: var(--image-src); */
-	/* filter: drop-shadow(10px 10px 0 var(--purple-dark)); */
 }
 .decoration:before {
 	content: "";
