@@ -44,17 +44,14 @@ export default function Welcome() {
 
     <br />
 
-    <div className="center_box" style={{
-      textAlign: 'center',
-      marginBlockStart: 'var(--basis_x4)',
-      marginBlockEnd: 'var(--basis_x4)',
-    }}>
+    <div className="intro_letter">
       <Localized
         id="into_text"
         elems={{
           strong: <strong />,
           p: <p />,
           p_one: <p style={{ marginBlockEnd: '0' }} />,
+          p_strong: <p style={{ fontWeight: 'bold' }} />,
           // eslint-disable-next-line
           h2: <h2 style={{ marginBlockEnd: '20px' }} />,
         }}
