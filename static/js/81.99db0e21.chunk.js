@@ -1,0 +1,2 @@
+(this["webpackJsonplove.volt.link"]=this["webpackJsonplove.volt.link"]||[]).push([[81],{134:function(t,e,i){"use strict";i.r(e),e.default=i.p+"static/media/325054502_1816029828770764_457064908353054901_n.6e7b7ce9.jpg"}}]);
+//# sourceMappingURL=81.99db0e21.chunk.js.map
