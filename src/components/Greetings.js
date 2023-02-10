@@ -24,30 +24,30 @@ const fisherYatesShuffel = (toShuffle = []) => {
 }
 
 let decorations_tmp = [
-  '1f31f.svg',
-  '1f48b.svg',
-  '1f48c.svg',
-  '1f48d.svg',
-  '1f48e.svg',
-  '1f49a.svg',
-  '1f49b.svg',
-  '1f49c.svg',
-  '1f49d.svg',
-  '1f49e.svg',
-  // '1f308.svg', // rainbow (it does not look so good)
-  '1f381.svg',
-  '1f490.svg',
-  '1f495.svg',
-  '1f496.svg',
-  '1f497.svg',
-  '1f498.svg',
-  '1f499.svg',
-  '1f525.svg',
-  '2b50.svg',
-  '26a1.svg',
-  '2728.svg',
-  '2764.svg',
   '1f3f3-fe0f-200d-1f308.svg', // pride flag
+  '1f31f.svg', // start with sparks
+  '1f48b.svg', // kiss
+  '1f48c.svg', // love letter
+  '1f48d.svg', // ring with diamond
+  '1f48e.svg', // diamond
+  '1f49a.svg', // green heart
+  '1f49b.svg', // yellow heart
+  '1f49c.svg', // purple heart
+  '1f49d.svg', // red heart with gift ribbon
+  '1f49e.svg', // two hearts revolving
+  // '1f308.svg', // rainbow (it does not look so good)
+  '1f381.svg', // present
+  '1f490.svg', // flowers
+  '1f495.svg', // two hearts
+  '1f496.svg', // heart with sparkles
+  '1f497.svg', // beating heart
+  '1f498.svg', // heart with arrow
+  '1f499.svg', // blue heart
+  '1f525.svg', // fire
+  '2b50.svg', // star
+  '26a1.svg', // lightning
+  '2728.svg', // sparkles
+  '2764.svg', // red heart
 ]
   .map(async decoration => await lazyLoadImage(`decorations/volt/${decoration}`))
 
