@@ -2,18 +2,72 @@ import React, { useState, useEffect } from 'react';
 
 import '../fonts/ubuntu-v20-latin/index.css'
 
-import Colcade from '../../node_modules/colcade/colcade.js'
+import Colcade from 'colcade'
 
 // import { Localized, useLocalization } from '../fluent/Localized.js'
 
 async function lazyLoadImage (imageName) {
   try {
-    const src = await import(`../images/greetings/${imageName}`)
+    const src = await import(`../images/${imageName}`)
     return src.default
   } catch (error) {
     console.error('lazyLoadImage-error', error);
   }
 };
+
+let decorations_tmp = [
+  '1f31f.svg',
+  '1f48b.svg',
+  '1f48c.svg',
+  '1f48d.svg',
+  '1f48e.svg',
+  '1f49a.svg',
+  '1f49b.svg',
+  '1f49c.svg',
+  '1f49d.svg',
+  '1f49e.svg',
+  '1f308.svg',
+  '1f381.svg',
+  '1f490.svg',
+  '1f495.svg',
+  '1f496.svg',
+  '1f497.svg',
+  '1f498.svg',
+  '1f499.svg',
+  '1f525.svg',
+  '2b50.svg',
+  '26a1.svg',
+  '2728.svg',
+  '2764.svg',
+]
+  .map(async decoration => await lazyLoadImage(`decorations/${decoration}`))
+
+function Decoration() {
+  const [decorationSrc, setDecorationSrc] = useState([])
+  const [pos_class, setPosClass] = useState('pos_1')
+
+  useEffect(() => {
+    Promise.all(decorations_tmp).then(decorations => {
+      const random_decoration = decorations[Math.floor(Math.random() * decorations.length)]
+      setDecorationSrc(random_decoration)
+
+      const pos_classes = [
+        'pos_top_left',
+        'pos_top_right',
+        'pos_middle_right',
+        'pos_middle_left',
+      ]
+      const random_pos_class = pos_classes[Math.floor(Math.random() * pos_classes.length)]
+      setPosClass(random_pos_class)
+    })
+  }, [])
+
+  return <div
+    alt=""
+    className={`decoration ${pos_class}`}
+    style={{ '--image-src': `url(${decorationSrc})` }}
+  ></div>
+}
 
 
 let greetings_data = [
@@ -245,16 +299,13 @@ Gelijkheid is een pijler van onze Europese beweging. Als Volt Den Haag wensen wi
   }
 ]
 
-greetings_data = [
-  ...greetings_data,
-  ...greetings_data,
-]
+greetings_data = greetings_data
   .map(async greeting => {
     const key = greeting.key
     greeting.images = await Promise.all(
       greeting.images
       .filter(Boolean)
-      .map(async imageName => await lazyLoadImage(`${key}/${imageName}`))
+      .map(async imageName => await lazyLoadImage(`greetings/${key}/${imageName}`))
     )
     return greeting
   })
@@ -306,18 +357,19 @@ export default function Wishes() {
 
     {greetings.map((greeting, index) => {
       return <div key={`${greeting.key}_${index}`} className="masonry-grid-item greeting">
-      <div className="text">
-        <h2>{greeting.title}</h2>
-        {greeting.text.split('\n').filter(Boolean).map((t,i) => <p key={i}>{t}</p>)}
+        <div className="text">
+          <Decoration />
+          <h2>{greeting.title}</h2>
+          {greeting.text.split('\n').filter(Boolean).map((t,i) => <p key={i}>{t}</p>)}
+        </div>
+        {
+        greeting.images
+          .filter(Boolean)
+          .map((image, index) => {
+            return <img key={index} className="photo" src={image} alt={greeting.title} />
+          })
+        }
       </div>
-      {
-      greeting.images
-        .filter(Boolean)
-        .map((image, index) => {
-          return <img key={index} src={image} alt={greeting.title} />
-        })
-      }
-    </div>
-  })}
+    })}
   </div>
 }

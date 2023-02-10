@@ -24,7 +24,17 @@
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
+	/* animation: heartbeat 1.2s linear infinite; */
 }
+@keyframes heartbeat {
+  0% {		transform: scale(0.8);	}
+  5% {		transform: scale(0.9);	}
+  10% {		transform: scale(0.8);	}
+  15% {		transform: scale(1);		}
+  50% {		transform: scale(0.8);	}
+  100% {	transform: scale(0.8);	}
+}
+
 .slogan {
 	display: block;
 	width: calc(100% - var(--basis_x8));
@@ -77,6 +87,7 @@ nav {
 
 
 .greeting {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -91,7 +102,7 @@ nav {
 	color: var(--on-red);
 }
 .greeting .text,
-.greeting img {
+.greeting .photo {
 	box-shadow: 10px 10px 0 0 var(--purple-dark);
 }
 .greeting .text {
@@ -103,26 +114,81 @@ nav {
 	transform: rotate(-1deg);
 }
 
-.greeting img {
+.greeting .photo {
 	background: var(--purple);
 	width: calc(100% - var(--basis_x2));
 	max-width: calc(100% - var(--basis_x2));
 	margin-block-start: calc(-1 * var(--basis_x2));
 }
 
-.greeting img:nth-child(2) {
+.greeting .photo:nth-child(2) {
 	z-index: 2;
 	transform: rotate(-2deg);
 }
-.greeting img:nth-child(3) {
+.greeting .photo:nth-child(3) {
 	z-index: 3;
 	transform: rotate(2deg);
 }
 .greeting .text:hover,
-.greeting img:hover {
+.greeting .photo:hover {
 	z-index: 10;
 }
 
+.decoration {
+	z-index: 0;
+	position: absolute;
+	width: var(--basis_x4);
+	height: var(--basis_x4);
+	/* background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: var(--image-src); */
+	/* filter: drop-shadow(10px 10px 0 var(--purple-dark)); */
+}
+.decoration:before {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: var(--image-src);
+	filter: 
+    drop-shadow( 2px  0px 0 var(--purple-dark))
+		drop-shadow( 2px  2px 0 var(--purple-dark))
+    drop-shadow( 0px  2px 0 var(--purple-dark))
+    drop-shadow(-2px  0px 0 var(--purple-dark))
+    drop-shadow(-2px -2px 0 var(--purple-dark))
+    drop-shadow( 0px -2px 0 var(--purple-dark))
+    drop-shadow( 2px -2px 0 var(--purple-dark))
+    drop-shadow(-2px  2px 0 var(--purple-dark))
+	;
+}
+.decoration.pos_top_left {
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -25%) rotate(-12deg);
+}
+.decoration.pos_top_right {
+	top: 0%;
+	right: 0;
+	transform: translate(50%, -25%) rotate(12deg);
+}
+.decoration.pos_middle_left {
+	top: 75%;
+	left: 0;
+	transform: translate(-50%, -25%) rotate(-12deg);
+}
+.decoration.pos_middle_right {
+	top: 60%;
+	right: 0;
+	transform: translate(50%, -25%) rotate(12deg);
+}
 
 
 
