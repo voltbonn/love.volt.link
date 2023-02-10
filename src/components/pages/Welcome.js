@@ -1,6 +1,6 @@
 import '../../fonts/ubuntu-v20-latin/index.css'
 
-import { Link, Outlet } from 'react-router-dom' // NavLink
+import { Outlet } from 'react-router-dom' // Link, NavLink
 import { Helmet } from 'react-helmet'
 
 import { Localized, useLocalization } from '../../fluent/Localized.js'
@@ -13,7 +13,7 @@ export default function Welcome() {
   const website_title = getString('website_title')
   const website_description = website_title
 
-  const join_link = getString('join_link')
+  const join_link_href = getString('join_link_href')
 
   return <>
     <Helmet>
@@ -36,12 +36,18 @@ export default function Welcome() {
 
     <nav>
       {/* <NavLink to="/"><button>Hi!</button></NavLink> */}
-      <Link href={join_link}><button>Join Volt</button></Link>
+      <a href={join_link_href} target="_blank" rel="noreferrer"><button>
+        <Localized id="join_link" />
+      </button></a>
       {/* <NavLink to="follow"><button>Follow</button></NavLink> */}
     </nav>
 
+    <br />
+
     <div className="center_box" style={{
       textAlign: 'center',
+      marginBlockStart: 'var(--basis_x4)',
+      marginBlockEnd: 'var(--basis_x4)',
     }}>
       <Localized
         id="into_text"
@@ -55,10 +61,24 @@ export default function Welcome() {
         />
     </div>
 
-    <br />
-    <br />
-
     <Wishes />
+
+    <div alt="Future made in Europe" className="slogan"></div>
+
+    <nav>
+      <a href="https://www.volteuropa.org/" target="_blank" rel="noreferrer"><button>
+        Volt Europa
+      </button></a>
+      <a href="https://www.volteuropa.org/legal" target="_blank" rel="noreferrer"><button>
+        <Localized id="imprint" />
+      </button></a>
+      <a href="https://www.volteuropa.org/privacy" target="_blank" rel="noreferrer"><button>
+        <Localized id="privacy_policy" />
+      </button></a>
+      <a href={join_link_href} target="_blank" rel="noreferrer"><button>
+        <Localized id="join_link" />
+      </button></a>
+    </nav>
 
     <Outlet />
   </>

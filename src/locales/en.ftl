@@ -7,6 +7,10 @@ translator_names = Thomas Rosen
 website_title = Happy Valentine's Day from Volt Europa!
 
 join_link_href = https://volt.team/join
+join_link = Join Volt!
+
+imprint = Imprint
+privacy_policy = Privacy Policy
 
 into_text = 
   <p_one>Do we LOVE our fellow human beings?</p_one>

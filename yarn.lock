@@ -3535,6 +3535,11 @@ code-point-at@^1.0.0:
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
+colcade@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/colcade/-/colcade-0.2.0.tgz#1d4c949d677655865089ba0b78769693beca0b32"
+  integrity sha512-ccbmKzL0iZZvR1MZeR7r8wIDRSGGQxZI27NyILMjH8F6zOK8Xf04fEVJi2ajUlVgvY1uIRKml5KqHUv1eewBZw==
+
 collect-v8-coverage@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/collect-v8-coverage/-/collect-v8-coverage-1.0.1.tgz#cc2c8e94fc18bbdffe64d6534570c8a673b27f59"

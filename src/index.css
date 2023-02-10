@@ -1,10 +1,115 @@
-body {
+:root {
+  --purple-lighter: #e6ccff;
+  --purple-light: #b58dd9;
+  --purple: #502379;
+  --purple-dark: #19022d;
+  --purple-darker: #0d0019;
+
+  --green-lighter: #d1ffe9;
+  --green-light: #94fcc9;
+  --green: #1bbe6f;
+  --green-dark: #005029;
+  --green-darker: #00190d;
+
+  --red-lighter: #ffd6cc;
+  --red-light: #ffad93;
+  --red: #e63e12;
+  --red-dark: #641400;
+  --red-darker: #190500;
+
+  --yellow-lighter: #fff1cc;
+  --yellow-light: #ffe787;
+  --yellow: #fdc220;
+  --yellow-dark: #926f0d;
+  --yellow-darker: #191300;
+
+  --blue-lighter: #dff5ff;
+  --blue-light: #c3f1ff;
+  --blue: #82d0f4;
+  --blue-dark: #30708e;
+  --blue-darker: #031219;
+
+  --gray-lighter: #ffffff;
+  --gray-light: #edecee;
+  --gray: #c2bfc4;
+  --gray-dark: #726f76;
+  --gray-darker: #181719;
+
+  --on-purple-lighter: var(--purple-darker);
+  --on-purple-light: var(--purple-darker);
+  --on-purple: var(--gray-lighter);
+  --on-purple-dark: var(--gray-lighter);
+  --on-purple-darker: var(--gray-lighter);
+
+  --on-green-lighter: var(--green-darker);
+  --on-green-light: var(--green-darker);
+  --on-green: var(--gray-lighter);
+  --on-green-dark: var(--gray-lighter);
+  --on-green-darker: var(--gray-lighter);
+
+  --on-red-lighter: var(--red-darker);
+  --on-red-light: var(--red-darker);
+  --on-red: var(--gray-lighter);
+  --on-red-dark: var(--gray-lighter);
+  --on-red-darker: var(--gray-lighter);
+
+  --on-yellow-lighter: var(--yellow-darker);
+  --on-yellow-light: var(--yellow-darker);
+  --on-yellow: var(--yellow-darker);
+  --on-yellow-dark: var(--gray-lighter);
+  --on-yellow-darker: var(--gray-lighter);
+
+  --on-blue-lighter: var(--blue-darker);
+  --on-blue-light: var(--blue-darker);
+  --on-blue: var(--blue-darker);
+  --on-blue-dark: var(--gray-lighter);
+  --on-blue-darker: var(--gray-lighter);
+
+  --on-gray-lighter: var(--gray-darker);
+  --on-gray-light: var(--gray-darker);
+  --on-gray: var(--gray-darker);
+  --on-gray-dark: var(--gray-lighter);
+  --on-gray-darker: var(--gray-lighter);
+
+  --alpha-more: 0.8;
+  --alpha: 0.6;
+  --alpha-less: 0.2;
+
+  --blur: 20px;
+
+  --timing: .2s ease-in-out;
+
+  --font-family: 'Ubuntu', 'Noto Kufi Arabic', 'Geeza Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+  --basis: 1rem;
+  --basis_x0_5: calc(var(--basis) * 0.5);
+  --basis_x2: calc(var(--basis) * 2);
+  --basis_x4: calc(var(--basis) * 4);
+  --basis_x8: calc(var(--basis) * 8);
+}
+
+* {
   margin: 0;
-  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;*/
+  padding: 0;
+  font-family: var(--font-family);
+  /*
+    Ubuntu = Volt (It includes latin and arabic characters.)
+
+    Noto Kufi Arabic = A Noto font from Google (maybe it's installed)
+    Geeza Pro = macOS Arabic Default
+
+    -apple-system, BlinkMacSystemFont = macOS Default
+    Helvetica Neue = Old macOS Default
+    Segoe UI = Windows Default
+    Roboto = Android Default
+    Fira Sans = Firefox OS Default
+    Oxygen, Cantarell, Droid Sans = Linux
+
+    sans-serif = Fallback
+  */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 
@@ -24,10 +129,10 @@ body {
 }
 
 :root {
-  --font-family-website-title: Ubuntu, sans-serif;
-  --font-family-headline: Ubuntu, sans-serif;
-  --font-family-text: Ubuntu, sans-serif;
-  --font-family-button: Ubuntu, sans-serif;
+  --font-family-website-title: var(--font-family);
+  --font-family-headline: var(--font-family);
+  --font-family-text: var(--font-family);
+  --font-family-button: var(--font-family);
 }
 
 * {
@@ -68,13 +173,6 @@ h3 {
   font-size: 20px;
   letter-spacing: 0px;
 }
-h3.big {
-  font-size: 30px;
-  letter-spacing: 0.5px;
-}
-h3+p {
-  margin-top: 0.5rem;
-}
 
 body, p {
   font-family: var(--font-family-text);
@@ -105,10 +203,11 @@ button {
   cursor: pointer;
 
 	padding: 10px 20px;
-	border-radius: 100px;
+	border-radius: 0;
 	color: var(--background-color);
 	fill: var(--background-color);
 	background: var(--text-color);
+  box-shadow: 10px 10px 0 0 var(--purple-dark);
 	font-weight: bold;
 	transition: box-shadow 0.2s ease;
 }
@@ -117,22 +216,23 @@ button.small {
   font-size: 14px;
 }
 button[data-selected="true"] {
-  box-shadow: 0 0 0 5px var(--text-color);
+  box-shadow: 5px 5px 0 0 var(--purple-dark);
 }
 button:not(:disabled):hover {
-	box-shadow: 0 0 0 10px var(--primary-color);
+  box-shadow: 5px 5px 0 0 var(--purple-dark);
 	color: var(--background-color);
 	fill: var(--background-color);
 	background: var(--text-color);
 	text-decoration: none;
 }
 button.small:not(:disabled):hover {
-  box-shadow: 0 0 0 5px var(--primary-color);
+  box-shadow: 5px 5px 0 0 var(--purple-dark);
 }
 button:not(:disabled):active,
 button:not(:disabled):focus,
 button:not(:disabled).active,
 a.active button:not(:disabled) {
+  box-shadow: 0 0 0 0 var(--purple-dark);
 	color: var(--background-color);
 	fill: var(--background-color);
 	background: var(--primary-color);
