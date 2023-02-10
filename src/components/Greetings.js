@@ -325,7 +325,7 @@ Gelijkheid is een pijler van onze Europese beweging. Als Volt Den Haag wensen wi
     title: 'Bons baisers de Strasbourg/Kehl!',
     text: '',
     images: [
-      'image.jpg',
+      'image.jpg', // Damian
     ],
   }
 ]
