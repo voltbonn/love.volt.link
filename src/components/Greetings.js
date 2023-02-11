@@ -360,7 +360,7 @@ Gelijkheid is een pijler van onze Europese beweging. Als Volt Den Haag wensen wi
   {
     key: 'Strasbourg_Kehl',
     title: 'Bons baisers de Strasbourg/Kehl!',
-    text: '',
+    text: 'Herzliche Valentinsgrüße von unserem Europa Abgeordnetten aus Strasbourg und Kehl 🇪🇺💜',
     images: [
       'image.jpg', // Damian
     ],
