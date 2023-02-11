@@ -100,6 +100,18 @@ let greetings_data = [
     images: [
       'IMG_1202.jpg',
     ],
+    links: [
+      {
+        title: '@VoltPotsdam',
+        url: 'https://www.instagram.com/voltpotsdam/',
+        color: 'red',
+      },
+      {
+        title: '@VoltBrandenburg',
+        url: 'https://www.instagram.com/voltbrandenburg/',
+        color: 'red',
+      },
+    ]
   },
   {
     key: 'Bonn',
@@ -110,6 +122,23 @@ let greetings_data = [
     images: [
       'Volt Frauen auf der Kennedy Brücke.jpg',
     ],
+    links: [
+      {
+        title: '@VoltBonn',
+        url: 'https://www.instagram.com/voltbonn/',
+        color: 'red',
+      },
+      // {
+      //   title: '@VoltBonn',
+      //   url: 'https://twitter.com/voltbonn',
+      //   color: 'blue',
+      // },
+      {
+        title: '@VoltDeutschland',
+        url: 'https://www.instagram.com/voltdeutschland/',
+        color: 'red',
+      },
+    ]
   },
   {
     key: 'Paris',
@@ -119,6 +148,13 @@ let greetings_data = [
       'image.jpg',
       'image-1.jpg',
     ],
+    links: [
+      {
+        title: '@volt_paris_idf',
+        url: 'https://www.instagram.com/volt_paris_idf/',
+        color: 'red',
+      },
+    ]
   },
   {
     key: 'Marburg',
@@ -328,12 +364,22 @@ Gelijkheid is een pijler van onze Europese beweging. Als Volt Den Haag wensen wi
     images: [
       'image.jpg', // Damian
     ],
+    links: [
+      {
+        title: '@damian.boeselager',
+        url: 'https://www.instagram.com/damian.boeselager/',
+        color: 'red',
+      },
+    ]
   }
 ]
 
 greetings_data = greetings_data
   .map(async greeting => {
     const key = greeting.key
+
+    greeting.links = greeting.links || []
+
     greeting.images = await Promise.all(
       greeting.images
       .filter(Boolean)
@@ -393,6 +439,25 @@ export default function Wishes() {
           <Decoration />
           <h2>{greeting.title}</h2>
           {greeting.text.split('\n').filter(Boolean).map((t,i) => <p key={i}>{t}</p>)}
+          {
+            greeting.links.length > 0
+              ? <div className="links">
+                {
+                  greeting.links.map((link_data, index) => {
+                    return <a
+                      key={link_data.url}
+                      href={link_data.url}
+                      target="_blank" rel="noreferrer"
+                    >
+                      <button className={`text_${link_data.color}`}>
+                        {link_data.title}
+                      </button>
+                    </a>
+                  })
+                }
+              </div>
+              : null
+          }
         </div>
         {
         greeting.images

@@ -197,6 +197,24 @@ nav {
 	z-index: 10;
 }
 
+.greeting .links {
+	display: flex;
+	gap: var(--basis) var(--basis);
+	flex-wrap: wrap;
+	margin-block-start: var(--basis_x2);
+	margin-block-end: var(--basis);
+	transform: rotate(-1deg);
+}
+.greeting .links a:nth-child(n+1) {
+	transform: rotate(-1deg);
+}
+.greeting .links a:nth-child(n+2) {
+	transform: rotate(-2deg) translateY(calc(-0.5 * var(--basis)));
+}
+.greeting .links a:nth-child(n+3) {
+	transform: rotate(-2deg);
+}
+
 .decoration {
 	z-index: 0;
 	position: absolute;

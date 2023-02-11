@@ -224,6 +224,26 @@ button {
 	font-weight: bold;
 	transition: box-shadow 0.2s ease;
 }
+button.text_red {
+  color: var(--red);
+  fill: var(--red);
+  background: var(--on-red);
+}
+button.text_blue {
+  color: var(--blue-dark);
+  fill: var(--blue-dark);
+  background: var(--on-blue-dark);
+}
+button.text_green {
+  color: var(--green);
+  fill: var(--green);
+  background: var(--on-green);
+}
+button.text_yellow {
+  color: var(--yellow-dark);
+  fill: var(--yellow-dark);
+  background: var(--on-yellow-dark);
+}
 button.small {
   padding: 5px 10px;
   font-size: 14px;
@@ -233,9 +253,6 @@ button[data-selected="true"] {
 }
 button:not(:disabled):hover {
   box-shadow: 5px 5px 0 0 var(--purple-dark);
-	color: var(--background-color);
-	fill: var(--background-color);
-	background: var(--text-color);
 	text-decoration: none;
 }
 button.small:not(:disabled):hover {
@@ -246,9 +263,6 @@ button:not(:disabled):focus,
 button:not(:disabled).active,
 a.active button:not(:disabled) {
   box-shadow: 0 0 0 0 var(--purple-dark);
-	color: var(--background-color);
-	fill: var(--background-color);
-	background: var(--primary-color);
 	text-decoration: none;
 }
 button:disabled {
