@@ -157,6 +157,22 @@ let greetings_data = [
     ]
   },
   {
+    key: 'Berlin',
+    title: 'Valentin\'s Grüße von Berlin nach ganz Europa!',
+    text: ``,
+    images: [
+      'signal-2023-02-11-17-30-22-440.jpg',
+      'signal-2023-02-11-15-18-29-133.jpg',
+    ],
+    links: [
+      {
+        title: '@volt_berlin',
+        url: 'https://www.instagram.com/volt_berlin/',
+        color: 'red',
+      },
+    ]
+  },
+  {
     key: 'Marburg',
     title: 'Liebesgrüße aus Marburg!',
     text: 'Hey Du! Wir sind das Marburger Team - ein offener, bunter Haufen, der Lust hat, etwas in der Gesellschaft zu bewirken. Egal, ob du politisch erfahren bist oder nicht - wir möchten wissen, was Du denkst und welche Ideen du hast! Uns interessiert auch nicht, woher Du kommst, wie alt Du bist oder welches Gender Du hast. Wir möchten gemeinsam mit Dir Visionen leben und Herzensthemen umsetzen. Hast du Ideen für Marburg, Deutschland und Europa? Dann melde dich bei uns - JOIN VOLT! Viele Valentinsgrüße, Dein Marburger Team <3',
