@@ -96,7 +96,8 @@ export default function Welcome() {
       <Localized
         id="design_by"
         elems={{
-          a: <a href="https://thomasrosen.me" target="_blank" />
+          // eslint-disable-next-line jsx-a11y/anchor-has-content
+          a: <a href="https://thomasrosen.me" target="_blank" rel="noreferrer" />
         }}
       />
     </p>
