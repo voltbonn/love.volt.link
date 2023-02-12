@@ -84,6 +84,9 @@ export default function Welcome() {
       <a href="https://www.volteuropa.org/privacy" target="_blank" rel="noreferrer"><button>
         <Localized id="privacy_policy" />
       </button></a>
+      <a href="https://github.com/voltbonn/love.volt.link" target="_blank" rel="noreferrer"><button>
+        <Localized id="source_code" />
+      </button></a>
       <a href={join_link_href} target="_blank" rel="noreferrer"><button>
         <Localized id="join_link" />
       </button></a>

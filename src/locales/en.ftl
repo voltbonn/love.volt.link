@@ -11,6 +11,7 @@ join_link = Join Volt!
 
 imprint = Imprint
 privacy_policy = Privacy Policy
+source_code = Source Code
 
 into_text = 
   <strong>My Dearest Europe,</strong><br />
