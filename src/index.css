@@ -273,7 +273,7 @@ button:disabled {
 a,
 .link {
   color: var(--primary-color);
-  text-decoration: none;
+  text-decoration: underline;
   text-decoration-color: var(--primary-color);
 }
 
@@ -283,6 +283,7 @@ a:hover,
   text-decoration: underline;
   /* text-decoration-style: double; */
   text-decoration-color: currentColor;
+  opacity: var(--alpha);
 }
 
 hr {

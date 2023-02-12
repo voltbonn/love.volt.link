@@ -91,6 +91,15 @@ export default function Welcome() {
         <Localized id="join_link" />
       </button></a>
     </nav>
+    <br />
+    <p>
+      <Localized
+        id="design_by"
+        elems={{
+          a: <a href="https://thomasrosen.me" target="_blank" />
+        }}
+      />
+    </p>
 
     <Outlet />
   </>

@@ -12,6 +12,7 @@ join_link = Bei Volt mitmachen!
 imprint = Impressum
 privacy_policy = Datenschutz Erklärung
 source_code = Quellcode
+design_by = Webgestaltung von <a>Thomas Rosen</a>
 
 into_text = 
   <strong>Mein liebstes Europa,</strong><br />
