@@ -11,6 +11,8 @@ join_link = Join Volt!
 
 imprint = Imprint
 privacy_policy = Privacy Policy
+source_code = Source Code
+design_by = Website designed by <a>Thomas Rosen</a>
 
 into_text = 
   <strong>My Dearest Europe,</strong><br />
