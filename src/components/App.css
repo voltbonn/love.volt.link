@@ -192,6 +192,22 @@ nav {
 	z-index: 3;
 	transform: rotate(2deg);
 }
+.greeting .photo:nth-child(4) {
+	z-index: 4;
+	transform: rotate(-2deg);
+}
+.greeting .photo:nth-child(5) {
+	z-index: 5;
+	transform: rotate(2deg);
+}
+.greeting .photo:nth-child(6) {
+	z-index: 6;
+	transform: rotate(-2deg);
+}
+.greeting .photo:nth-child(7) {
+	z-index: 7;
+	transform: rotate(2deg);
+}
 .greeting .text:hover,
 .greeting .photo:hover {
 	z-index: 10;
