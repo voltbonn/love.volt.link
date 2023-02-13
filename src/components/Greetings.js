@@ -158,9 +158,10 @@ let greetings_data = [
   },
   {
     key: 'Berlin',
-    title: 'Valentin\'s Grüße von Berlin nach ganz Europa!',
-    text: ``,
+    title: 'Liebe ist für alle da! 💜',
+    text: `Wir als Berliner Team wünschen allen Menschen eine große Portion Liebe!`,
     images: [
+      'berlin_bpt_2023_01.jpg',
       'signal-2023-02-11-17-30-22-440.jpg',
       'signal-2023-02-11-15-18-29-133.jpg',
     ],
