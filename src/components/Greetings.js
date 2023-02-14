@@ -197,7 +197,7 @@ Volt Noord-Holland`,
     title: 'From Ruhrpott with Love',
     text: `Ein bisken Pottliebe von hier an alle 💜!`,
     images: [
-      '326215667_868655994428086_6432185707996084039_n.jpg',
+      '328841918_851089932646202_4040560770857888644_n.jpg',
     ],
     links: []
   },
