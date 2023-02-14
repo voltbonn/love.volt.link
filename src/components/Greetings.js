@@ -174,12 +174,32 @@ let greetings_data = [
     ]
   },
   {
+    key: 'Noord-Holland',
+    title: 'Veel liefde uit Noord-Holland',
+    text: `Lief Europa, we vanuit het mooie Noord-Holland wensen jullie allemaal een fijne Valentijnsdag. Laten we met z’n allen de komende jaren zoveel mogelijk liefde de wereld in te sturen. We zullen ons de komende jaren gaan inzetten voor een mooiere Noord-Holland, Nederland en bovenal een mooier Europa. Dit door met elkaar in gesprek te gaan, respect te hebben voor elkaars mening, altijd uitgaan van positieve energie, maar bovenal met heel veel liefde
+Veel liefs en een fijne Valentijnsdag,
+Volt Noord-Holland`,
+    images: [
+      '326215667_868655994428086_6432185707996084039_n.jpg',
+    ],
+    links: []
+  },
+  {
     key: 'Marburg',
     title: 'Liebesgrüße aus Marburg!',
     text: 'Hey Du! Wir sind das Marburger Team - ein offener, bunter Haufen, der Lust hat, etwas in der Gesellschaft zu bewirken. Egal, ob du politisch erfahren bist oder nicht - wir möchten wissen, was Du denkst und welche Ideen du hast! Uns interessiert auch nicht, woher Du kommst, wie alt Du bist oder welches Gender Du hast. Wir möchten gemeinsam mit Dir Visionen leben und Herzensthemen umsetzen. Hast du Ideen für Marburg, Deutschland und Europa? Dann melde dich bei uns - JOIN VOLT! Viele Valentinsgrüße, Dein Marburger Team <3',
     images: [
       'image.jpg',
     ],
+  },
+  {
+    key: 'Ruhrgebiet',
+    title: 'From Ruhrpott with Love',
+    text: `Ein bisken Pottliebe von hier an alle 💜!`,
+    images: [
+      '326215667_868655994428086_6432185707996084039_n.jpg',
+    ],
+    links: []
   },
   {
     key: 'Brescia',
