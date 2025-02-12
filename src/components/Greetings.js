@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
-import '../fonts/ubuntu-v20-latin/index.css'
+import '../fonts/ubuntu-v20-latin/index.css';
 
-import Colcade from 'colcade'
+import Colcade from 'colcade';
 
 // import { Localized, useLocalization } from '../fluent/Localized.js'
 
-async function lazyLoadImage (imageName) {
+async function lazyLoadImage(imageName) {
   try {
     const src = await import(`../images/${imageName}`)
     return src.default
@@ -71,11 +71,11 @@ function Decoration() {
       const random_pos_class = fisherYatesShuffel(pos_classes)[0]
       setPosClass(random_pos_class)
 
-      const random_animation_delay = Math.round(Math.random() * 10)*0.1
+      const random_animation_delay = Math.round(Math.random() * 10) * 0.1
       setAnimationDelay(random_animation_delay)
 
       // radom duration between 0.5 and 1.5
-      const random_animation_duration = 2 + ((Math.round(Math.random() * 10)*0.1) * 2)
+      const random_animation_duration = 2 + ((Math.round(Math.random() * 10) * 0.1) * 2)
       setAnimationDuration(random_animation_duration)
     })
   }, [])
@@ -419,8 +419,8 @@ greetings_data = greetings_data
 
     greeting.images = await Promise.all(
       greeting.images
-      .filter(Boolean)
-      .map(async imageName => await lazyLoadImage(`greetings/${key}/${imageName}`))
+        .filter(Boolean)
+        .map(async imageName => await lazyLoadImage(`greetings/${key}/${imageName}`))
     )
     return greeting
   })
@@ -433,7 +433,7 @@ function re_calc_mansonary() {
 }
 
 let doit_re_calc_mansonary;
-function window_resize () {
+function window_resize() {
   clearTimeout(doit_re_calc_mansonary);
   doit_re_calc_mansonary = setTimeout(re_calc_mansonary, 100);
 }
@@ -475,7 +475,7 @@ export default function Wishes() {
         <div className="text">
           <Decoration />
           <h2>{greeting.title}</h2>
-          {greeting.text.split('\n').filter(Boolean).map((t,i) => <p key={i}>{t}</p>)}
+          {greeting.text.split('\n').filter(Boolean).map((t, i) => <p key={i}>{t}</p>)}
           {
             greeting.links.length > 0
               ? <div className="links">
@@ -497,11 +497,11 @@ export default function Wishes() {
           }
         </div>
         {
-        greeting.images
-          .filter(Boolean)
-          .map((image, index) => {
-            return <img key={index} className="photo" src={image} alt={greeting.title} />
-          })
+          greeting.images
+            .filter(Boolean)
+            .map((image, index) => {
+              return <img key={index} className="photo" src={image} alt={greeting.title} />
+            })
         }
       </div>
     })}
