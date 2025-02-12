@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklove_volt_link=self.webpackChunklove_volt_link||[]).push([[3547],{3547:(e,l,a)=>{e.exports=a.p+"static/media/image-1.a0263c039dc0b1ab89cb.jpg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklove_volt_link=self.webpackChunklove_volt_link||[]).push([[7152],{7152:(e,l,t)=>{e.exports=t.p+"static/media/berlin_bpt_2023_01.fe06450c9d51ad57acbe.jpg"}}]);

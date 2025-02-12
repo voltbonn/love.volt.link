@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklove_volt_link=self.webpackChunklove_volt_link||[]).push([[6790],{6790:(e,l,t)=>{e.exports=t.p+"static/media/Volt Frauen auf der Kennedy Br\xfccke.483cb5b0022487bc067a.jpg"}}]);

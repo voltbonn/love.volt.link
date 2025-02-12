@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklove_volt_link=self.webpackChunklove_volt_link||[]).push([[9636],{9636:(e,l,b)=>{e.exports=b.p+"static/media/original_f3b061f9-9dee-4ab5-b6e2-2b2593705ef4_20230125_221906.0702a4b3d40046fc7b08.jpg"}}]);

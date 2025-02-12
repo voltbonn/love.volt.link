@@ -1,2 +1,0 @@
-(this["webpackJsonplove.volt.link"]=this["webpackJsonplove.volt.link"]||[]).push([[60],{113:function(t,e,i){"use strict";i.r(e),e.default=i.p+"static/media/berlin_bpt_2023_01.fe06450c.jpg"}}]);
-//# sourceMappingURL=60.aa3c6b95.chunk.js.map

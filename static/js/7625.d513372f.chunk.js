@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklove_volt_link=self.webpackChunklove_volt_link||[]).push([[7625],{7625:(e,l,c)=>{e.exports=c.p+"static/media/volt_claim.b96fbcaec2a1cc6d961d.svg"}}]);

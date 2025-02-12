@@ -1,2 +1,0 @@
-(this["webpackJsonplove.volt.link"]=this["webpackJsonplove.volt.link"]||[]).push([[28],{85:function(t,s,i){"use strict";i.r(s),s.default=i.p+"static/media/2728.d9d0826b.svg"}}]);
-//# sourceMappingURL=28.c965748b.chunk.js.map

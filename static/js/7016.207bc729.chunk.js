@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklove_volt_link=self.webpackChunklove_volt_link||[]).push([[7016],{7016:(e,l,t)=>{e.exports=t.p+"static/media/Volt_Backgrounds_Valentin.7df06b0de647e21c42fb.jpg"}}]);
