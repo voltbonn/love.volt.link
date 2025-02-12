@@ -2,11 +2,11 @@
 
 name: Deploy to GitHub Pages
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2-beta
         with:
-          node-version: '16'
+          node-version: "20"
           check-latest: true
       - name: Install Dependencies
         run: yarn
@@ -41,4 +41,3 @@ jobs:
           email: thomas.rosen@me.com
           build_dir: build
           cname: love.volt.link
-
