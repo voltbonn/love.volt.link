@@ -92,6 +92,39 @@ function Decoration() {
 }
 
 
+function randomEntries(amount, entries) {
+  const shuffled = fisherYatesShuffel([...entries])
+  return shuffled.slice(0, amount)
+}
+
+const links_volt_sh = [
+  {
+    title: '@Volt_SH',
+    url: 'https://www.instagram.com/volt_sh/',
+    color: 'red',
+  },
+  {
+    title: 'Volt Schleswig-Holstein (FB)',
+    url: 'https://www.facebook.com/VoltSchleswigHolstein',
+    color: 'blue',
+  },
+  {
+    title: '@Volt_SH (TikTok)',
+    url: 'https://www.tiktok.com/@volt_sh',
+    color: 'purple',
+  },
+  {
+    title: 'Volt Schleswigholstein auf BlueSky',
+    url: 'https://bsky.app/profile/voltschleswigholstein.org',
+    color: 'blue',
+  },
+  {
+    title: 'Volt Schleswig-Holstein',
+    url: 'https://voltdeutschland.org/schleswig-holstein',
+    color: 'purple',
+  },
+]
+
 let greetings_data = [
   {
     key: 'Kiel',
@@ -109,32 +142,7 @@ let greetings_data = [
         url: 'https://www.facebook.com/people/Volt-Kiel/61563040545066/',
         color: 'blue',
       },
-
-      {
-        title: '@Volt_SH',
-        url: 'https://www.instagram.com/volt_sh/',
-        color: 'red',
-      },
-      {
-        title: 'Volt Schleswig-Holstein (FB)',
-        url: 'https://www.facebook.com/VoltSchleswigHolstein',
-        color: 'blue',
-      },
-      {
-        title: '@Volt_SH (TikTok)',
-        url: 'https://www.tiktok.com/@volt_sh',
-        color: 'purple',
-      },
-      {
-        title: 'Volt Schleswigholstein auf BlueSky',
-        url: 'https://bsky.app/profile/voltschleswigholstein.org',
-        color: 'blue',
-      },
-      {
-        title: 'Volt Schleswig-Holstein',
-        url: 'https://voltdeutschland.org/schleswig-holstein',
-        color: 'purple',
-      },
+      ...randomEntries(2, links_volt_sh)
     ]
   },
   {
@@ -153,16 +161,7 @@ let greetings_data = [
         url: 'https://www.facebook.com/VoltLuebeck',
         color: 'blue',
       },
-      {
-        title: 'Volt Schleswig-Holstein',
-        url: 'https://voltdeutschland.org/schleswig-holstein',
-        color: 'purple',
-      },
-      {
-        title: '@Volt_SH',
-        url: 'https://www.instagram.com/volt_sh/',
-        color: 'red',
-      },
+      ...randomEntries(2, links_volt_sh)
     ]
   },
   {
@@ -170,66 +169,14 @@ let greetings_data = [
     title: 'Liebesgrüße aus Dithmarschen',
     text: `Liebe Volter*innen, zum Valentinstag feiern wir nicht nur die Liebe, sondern auch unsere gemeinsame Vision: ein vereintes, gerechtes und zukunftsfähiges Europa. Lasst uns weiter für Fortschritt und Zusammenhalt kämpfen!`,
     images: ['DSCN3211.JPG', '28ca0a99585da17a8c1331c706184c6b.jpg'],
-    links: [
-      {
-        title: '@Volt_SH',
-        url: 'https://www.instagram.com/volt_sh/',
-        color: 'red',
-      },
-      {
-        title: 'Volt Schleswig-Holstein (FB)',
-        url: 'https://www.facebook.com/VoltSchleswigHolstein',
-        color: 'blue',
-      },
-      {
-        title: '@Volt_SH (TikTok)',
-        url: 'https://www.tiktok.com/@volt_sh',
-        color: 'blue',
-      },
-      {
-        title: 'Volt Schleswigholstein auf BlueSky',
-        url: 'https://bsky.app/profile/voltschleswigholstein.org',
-        color: 'blue',
-      },
-      {
-        title: 'Volt Schleswig-Holstein',
-        url: 'https://voltdeutschland.org/schleswig-holstein',
-        color: 'purple',
-      },
-    ]
+    links: randomEntries(2, links_volt_sh)
   },
   {
     key: 'Pinneberg',
     title: 'Pinneberg sendet Liebe raus!',
     text: `Liebe und Europa sind für uns der Schlüssel für eine friedliche Welt. Du findest auch das Beides gut zusammen passt, dann kontaktiere uns gerne und werde Teil der Volt-Gemeinschaft! Schönen Valentinstag vom Team Kreis Pinneberg`,
     images: ['IMG_3406.JPG', '1b05a9062f80581afcdc6e6fcfcc3b3c.jpg'],
-    links: [
-      {
-        title: '@Volt_SH',
-        url: 'https://www.instagram.com/volt_sh/',
-        color: 'red',
-      },
-      {
-        title: 'Volt Schleswig-Holstein (FB)',
-        url: 'https://www.facebook.com/VoltSchleswigHolstein',
-        color: 'blue',
-      },
-      {
-        title: '@Volt_SH (TikTok)',
-        url: 'https://www.tiktok.com/@volt_sh',
-        color: 'blue',
-      },
-      {
-        title: 'Volt Schleswigholstein auf BlueSky',
-        url: 'https://bsky.app/profile/voltschleswigholstein.org',
-        color: 'blue',
-      },
-      {
-        title: 'Volt Schleswig-Holstein',
-        url: 'https://voltdeutschland.org/schleswig-holstein',
-        color: 'purple',
-      },
-    ]
+    links: randomEntries(2, links_volt_sh)
   },
   {
     key: 'Steinburg',
@@ -241,33 +188,7 @@ let greetings_data = [
     Ob Windstrom, Geschichte oder weiter Blick,
     Steinburg verbindet – ein echtes Stück.`,
     images: ['9f432cfda2f418ecfc0f96a8ec7a8545.jpg', 'WhatsApp Image 2025-02-14 at 12.13.52.jpeg'],
-    links: [
-      {
-        title: '@Volt_SH',
-        url: 'https://www.instagram.com/volt_sh/',
-        color: 'red',
-      },
-      {
-        title: 'Volt Schleswig-Holstein (FB)',
-        url: 'https://www.facebook.com/VoltSchleswigHolstein',
-        color: 'blue',
-      },
-      {
-        title: '@Volt_SH (TikTok)',
-        url: 'https://www.tiktok.com/@volt_sh',
-        color: 'blue',
-      },
-      {
-        title: 'Volt Schleswigholstein auf BlueSky',
-        url: 'https://bsky.app/profile/voltschleswigholstein.org',
-        color: 'blue',
-      },
-      {
-        title: 'Volt Schleswig-Holstein',
-        url: 'https://voltdeutschland.org/schleswig-holstein',
-        color: 'purple',
-      },
-    ]
+    links: randomEntries(2, links_volt_sh)
   },
   {
     key: 'Bonn',
