@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklove_volt_link=self.webpackChunklove_volt_link||[]).push([[1733],{1733:(e,l,s)=>{e.exports=s.p+"static/media/IMG_3406.040d9fe7705844956a1d.JPG"}}]);

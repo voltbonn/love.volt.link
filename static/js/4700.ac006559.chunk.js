@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklove_volt_link=self.webpackChunklove_volt_link||[]).push([[4700],{4700:(e,t,l)=>{e.exports=l.p+"static/media/WhatsApp Image 2025-02-14 at 12.24.37.3fb878f00bcc9de673cf.jpeg"}}]);
