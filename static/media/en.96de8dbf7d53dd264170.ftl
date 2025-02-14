@@ -4,7 +4,7 @@
 default_locale = en
 translator_names = Thomas Rosen
 
-website_title = Happy Valentine's Day from Volt Europa!
+website_title = Happy Valentine's&nbsp;Day from Volt&nbsp;Europa!
 
 join_link_href = https://volt.team/join
 join_link = Join Volt!

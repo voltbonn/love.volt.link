@@ -4,7 +4,7 @@
 default_locale = de
 translator_names = Thomas Rosen
 
-website_title = Herzlichen Valentinstag von Volt Europa!
+website_title = Herzlichen Valentinstag von Volt&nbsp;Europa!
 
 join_link_href = https://voltdeutschland.org/mitmachen
 join_link = Bei Volt mitmachen!
