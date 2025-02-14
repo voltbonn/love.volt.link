@@ -59,14 +59,8 @@ export default function Welcome() {
       position: 'relative',
       padding: '0 var(--basis_x4)',
     }}>
-      <Decoration pos_classes={[
-        'pos_top_left',
-        'pos_middle_left',
-      ]} />
-      <Decoration pos_classes={[
-        'pos_top_right',
-        'pos_middle_right',
-      ]} />
+      <Decoration />
+      <Decoration />
       {/* <NavLink to="/"><button>Hi!</button></NavLink> */}
       <a href={join_link_href} target="_blank" rel="noreferrer"><button>
         <Localized id="join_link" />

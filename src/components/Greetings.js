@@ -51,14 +51,7 @@ let decorations_tmp = [
 ]
   .map(async decoration => await lazyLoadImage(`decorations/volt/${decoration}`))
 
-export function Decoration({
-  pos_classes = [
-    'pos_top_left',
-    'pos_top_right',
-    'pos_middle_right',
-    'pos_middle_left',
-  ]
-}) {
+export function Decoration() {
   const [decorationSrc, setDecorationSrc] = useState([])
   const [pos_class, setPosClass] = useState('pos_1')
   const [animation_delay, setAnimationDelay] = useState('0s')
@@ -69,8 +62,16 @@ export function Decoration({
       const random_decoration = fisherYatesShuffel([...decorations])[0]
       setDecorationSrc(random_decoration)
 
+      const pos_classes = [
+        'pos_top_left',
+        'pos_top_right',
+        'pos_middle_right',
+        'pos_middle_left',
+      ]
+
       const random_pos_class = fisherYatesShuffel(pos_classes)[0]
       setPosClass(random_pos_class)
+
 
       const random_animation_delay = Math.round(Math.random() * 10) * 0.1
       setAnimationDelay(random_animation_delay)
@@ -79,7 +80,7 @@ export function Decoration({
       const random_animation_duration = 2 + ((Math.round(Math.random() * 10) * 0.1) * 2)
       setAnimationDuration(random_animation_duration)
     })
-  }, [pos_classes])
+  }, [])
 
   return <div
     alt=""
