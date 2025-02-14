@@ -94,21 +94,101 @@ function Decoration() {
 
 let greetings_data = [
   {
-    key: 'Potsdam',
-    title: 'Liebe Grüße aus Potsdam',
-    text: `Frohen Valentinstag! Du liebst den Gedanken eines vereinten Europas so sehr wie wir? Dann schließ' dich uns an 😍`,
-    images: [
-      'IMG_1202.jpg',
-    ],
+    key: 'Kiel',
+    title: '💜 Liebe überwindet Wellen – Happy Valentine’s Day, Europa! 🌊',
+    text: `Von der Kieler Förde bis in jeden Winkel Europas: Heute feiern wir die Liebe, die uns verbindet, über Grenzen, Kulturen und Meere hinweg. Denn echte Liebe kennt keine Grenzen! 💜🌍`,
+    images: ['WhatsApp Image 2025-02-14 at 12.24.37.jpeg'],
     links: [
       {
-        title: '@VoltPotsdam',
-        url: 'https://www.instagram.com/voltpotsdam/',
+        title: '@VoltKiel_',
+        url: 'https://www.instagram.com/voltkiel_/',
         color: 'red',
       },
       {
-        title: '@VoltBrandenburg',
-        url: 'https://www.instagram.com/voltbrandenburg/',
+        title: '@Volt_SH',
+        url: 'https://www.instagram.com/volt_sh/',
+        color: 'red',
+      },
+      {
+        title: 'Volt Schleswig-Holstein',
+        url: 'https://voltdeutschland.org/schleswig-holstein',
+        color: 'purple',
+      }
+    ]
+  },
+  {
+    key: 'Lübeck',
+    title: 'From Lübeck with Love!',
+    text: `Allen da draußen einen lieben Valentinstag aus der Stadt der Marzipanherzen 💜`,
+    images: ['WhatsApp Image 2025-02-14 at 12.15.55.jpeg'],
+    links: [
+      {
+        title: 'Volt Schleswig-Holstein',
+        url: 'https://voltdeutschland.org/schleswig-holstein',
+        color: 'purple',
+      },
+      {
+        title: '@Volt_SH',
+        url: 'https://www.instagram.com/volt_sh/',
+        color: 'red',
+      },
+    ]
+  },
+  {
+    key: 'Dithmarschen',
+    title: 'Liebesgrüße aus Dithmarschen',
+    text: `Liebe Volter*innen, zum Valentinstag feiern wir nicht nur die Liebe, sondern auch unsere gemeinsame Vision: ein vereintes, gerechtes und zukunftsfähiges Europa. Lasst uns weiter für Fortschritt und Zusammenhalt kämpfen!`,
+    images: ['DSCN3211.JPG', '28ca0a99585da17a8c1331c706184c6b.jpg'],
+    links: [
+      {
+        title: 'Volt Schleswig-Holstein',
+        url: 'https://voltdeutschland.org/schleswig-holstein',
+        color: 'purple',
+      },
+      {
+        title: '@Volt_SH',
+        url: 'https://www.instagram.com/volt_sh/',
+        color: 'red',
+      },
+    ]
+  },
+  {
+    key: 'Pinneberg',
+    title: 'Pinneberg sendet Liebe raus!',
+    text: `Liebe und Europa sind für uns der Schlüssel für eine friedliche Welt. Du findest auch das Beides gut zusammen passt, dann kontaktiere uns gerne und werde Teil der Volt-Gemeinschaft! Schönen Valentinstag vom Team Kreis Pinneberg`,
+    images: ['IMG_3406.JPG', '1b05a9062f80581afcdc6e6fcfcc3b3c.jpg'],
+    links: [
+      {
+        title: 'Volt Schleswig-Holstein',
+        url: 'https://voltdeutschland.org/schleswig-holstein',
+        color: 'purple',
+      },
+      {
+        title: '@Volt_SH',
+        url: 'https://www.instagram.com/volt_sh/',
+        color: 'red',
+      },
+    ]
+  },
+  {
+    key: 'Steinburg',
+    title: 'Steinburg – nicht nur Norden, sondern uns\'re Mitte',
+    text: `Hier starten Winde, die bis Süddeutschland reichen,
+    Hier fährt die Stör raus, um die Meere zu streichen.
+    Glückstadt schickt Matjes in die Welt hinaus,
+    und der Mönchsweg? Der führt quer durch Europa – geradeaus.
+    Ob Windstrom, Geschichte oder weiter Blick,
+    Steinburg verbindet – ein echtes Stück.`,
+    images: ['9f432cfda2f418ecfc0f96a8ec7a8545.jpg', 'WhatsApp Image 2025-02-14 at 12.13.52.jpeg'],
+    links: [
+      {
+        title: 'Volt Schleswig-Holstein',
+        url: 'https://voltdeutschland.org/schleswig-holstein',
+        color: 'purple',
+      },
+      {
+        title: '@Volt_SH',
+        url: 'https://www.instagram.com/volt_sh/',
         color: 'red',
       },
     ]
@@ -136,6 +216,26 @@ let greetings_data = [
       {
         title: '@VoltDeutschland',
         url: 'https://www.instagram.com/voltdeutschland/',
+        color: 'red',
+      },
+    ]
+  },
+  {
+    key: 'Potsdam',
+    title: 'Liebe Grüße aus Potsdam',
+    text: `Frohen Valentinstag! Du liebst den Gedanken eines vereinten Europas so sehr wie wir? Dann schließ' dich uns an 😍`,
+    images: [
+      'IMG_1202.jpg',
+    ],
+    links: [
+      {
+        title: '@VoltPotsdam',
+        url: 'https://www.instagram.com/voltpotsdam/',
+        color: 'red',
+      },
+      {
+        title: '@VoltBrandenburg',
+        url: 'https://www.instagram.com/voltbrandenburg/',
         color: 'red',
       },
     ]
