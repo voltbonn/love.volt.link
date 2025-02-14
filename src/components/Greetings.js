@@ -51,7 +51,9 @@ let decorations_tmp = [
 ]
   .map(async decoration => await lazyLoadImage(`decorations/volt/${decoration}`))
 
-export function Decoration() {
+export function Decoration({
+  overwrite_pos_class,
+}) {
   const [decorationSrc, setDecorationSrc] = useState([])
   const [pos_class, setPosClass] = useState('pos_1')
   const [animation_delay, setAnimationDelay] = useState('0s')
@@ -72,11 +74,10 @@ export function Decoration() {
       const random_pos_class = fisherYatesShuffel(pos_classes)[0]
       setPosClass(random_pos_class)
 
-
       const random_animation_delay = Math.round(Math.random() * 10) * 0.1
       setAnimationDelay(random_animation_delay)
 
-      // radom duration between 0.5 and 1.5
+      // random duration between 0.5 and 1.5
       const random_animation_duration = 2 + ((Math.round(Math.random() * 10) * 0.1) * 2)
       setAnimationDuration(random_animation_duration)
     })
@@ -84,7 +85,7 @@ export function Decoration() {
 
   return <div
     alt=""
-    className={`decoration ${pos_class}`}
+    className={`decoration ${overwrite_pos_class || pos_class}`}
     style={{
       '--image-src': `url(${decorationSrc})`,
       '--animation-delay': `${animation_delay}s`,
