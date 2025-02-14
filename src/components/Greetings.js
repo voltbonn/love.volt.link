@@ -105,15 +105,36 @@ let greetings_data = [
         color: 'red',
       },
       {
+        title: 'Volt Kiel (FB)',
+        url: 'https://www.facebook.com/people/Volt-Kiel/61563040545066/',
+        color: 'blue',
+      },
+
+      {
         title: '@Volt_SH',
         url: 'https://www.instagram.com/volt_sh/',
         color: 'red',
       },
       {
+        title: 'Volt Schleswig-Holstein (FB)',
+        url: 'https://www.facebook.com/VoltSchleswigHolstein',
+        color: 'blue',
+      },
+      {
+        title: '@Volt_SH (TikTok)',
+        url: 'https://www.tiktok.com/@volt_sh',
+        color: 'purple',
+      },
+      {
+        title: 'Volt Schleswigholstein auf BlueSky',
+        url: 'https://bsky.app/profile/voltschleswigholstein.org',
+        color: 'blue',
+      },
+      {
         title: 'Volt Schleswig-Holstein',
         url: 'https://voltdeutschland.org/schleswig-holstein',
         color: 'purple',
-      }
+      },
     ]
   },
   {
@@ -122,6 +143,16 @@ let greetings_data = [
     text: `Allen da draußen einen lieben Valentinstag aus der Stadt der Marzipanherzen 💜`,
     images: ['WhatsApp Image 2025-02-14 at 12.15.55.jpeg'],
     links: [
+      {
+        title: '@voltluebeck',
+        url: 'https://www.instagram.com/voltluebeck/',
+        color: 'red',
+      },
+      {
+        title: 'Volt Lübeck (FB)',
+        url: 'https://www.facebook.com/VoltLuebeck',
+        color: 'blue',
+      },
       {
         title: 'Volt Schleswig-Holstein',
         url: 'https://voltdeutschland.org/schleswig-holstein',
@@ -141,14 +172,29 @@ let greetings_data = [
     images: ['DSCN3211.JPG', '28ca0a99585da17a8c1331c706184c6b.jpg'],
     links: [
       {
-        title: 'Volt Schleswig-Holstein',
-        url: 'https://voltdeutschland.org/schleswig-holstein',
-        color: 'purple',
-      },
-      {
         title: '@Volt_SH',
         url: 'https://www.instagram.com/volt_sh/',
         color: 'red',
+      },
+      {
+        title: 'Volt Schleswig-Holstein (FB)',
+        url: 'https://www.facebook.com/VoltSchleswigHolstein',
+        color: 'blue',
+      },
+      {
+        title: '@Volt_SH (TikTok)',
+        url: 'https://www.tiktok.com/@volt_sh',
+        color: 'blue',
+      },
+      {
+        title: 'Volt Schleswigholstein auf BlueSky',
+        url: 'https://bsky.app/profile/voltschleswigholstein.org',
+        color: 'blue',
+      },
+      {
+        title: 'Volt Schleswig-Holstein',
+        url: 'https://voltdeutschland.org/schleswig-holstein',
+        color: 'purple',
       },
     ]
   },
@@ -159,14 +205,29 @@ let greetings_data = [
     images: ['IMG_3406.JPG', '1b05a9062f80581afcdc6e6fcfcc3b3c.jpg'],
     links: [
       {
-        title: 'Volt Schleswig-Holstein',
-        url: 'https://voltdeutschland.org/schleswig-holstein',
-        color: 'purple',
-      },
-      {
         title: '@Volt_SH',
         url: 'https://www.instagram.com/volt_sh/',
         color: 'red',
+      },
+      {
+        title: 'Volt Schleswig-Holstein (FB)',
+        url: 'https://www.facebook.com/VoltSchleswigHolstein',
+        color: 'blue',
+      },
+      {
+        title: '@Volt_SH (TikTok)',
+        url: 'https://www.tiktok.com/@volt_sh',
+        color: 'blue',
+      },
+      {
+        title: 'Volt Schleswigholstein auf BlueSky',
+        url: 'https://bsky.app/profile/voltschleswigholstein.org',
+        color: 'blue',
+      },
+      {
+        title: 'Volt Schleswig-Holstein',
+        url: 'https://voltdeutschland.org/schleswig-holstein',
+        color: 'purple',
       },
     ]
   },
@@ -182,14 +243,29 @@ let greetings_data = [
     images: ['9f432cfda2f418ecfc0f96a8ec7a8545.jpg', 'WhatsApp Image 2025-02-14 at 12.13.52.jpeg'],
     links: [
       {
-        title: 'Volt Schleswig-Holstein',
-        url: 'https://voltdeutschland.org/schleswig-holstein',
-        color: 'purple',
-      },
-      {
         title: '@Volt_SH',
         url: 'https://www.instagram.com/volt_sh/',
         color: 'red',
+      },
+      {
+        title: 'Volt Schleswig-Holstein (FB)',
+        url: 'https://www.facebook.com/VoltSchleswigHolstein',
+        color: 'blue',
+      },
+      {
+        title: '@Volt_SH (TikTok)',
+        url: 'https://www.tiktok.com/@volt_sh',
+        color: 'blue',
+      },
+      {
+        title: 'Volt Schleswigholstein auf BlueSky',
+        url: 'https://bsky.app/profile/voltschleswigholstein.org',
+        color: 'blue',
+      },
+      {
+        title: 'Volt Schleswig-Holstein',
+        url: 'https://voltdeutschland.org/schleswig-holstein',
+        color: 'purple',
       },
     ]
   },
