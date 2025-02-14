@@ -13,14 +13,16 @@ export default function Welcome() {
   const website_title = getString('website_title')
   const website_description = website_title
 
+  const website_title_without_special_chat = website_title.replaceAll('&nbsp;', ' ')
+
   const join_link_href = getString('join_link_href')
 
   return <>
     <Helmet>
-      <title>{website_title}</title>
-      <meta name="title" content={website_title} />
-      <meta name="og:title" content={website_title} />
-      <meta name="twitter:title" content={website_title} />
+      <title>{website_title_without_special_chat}</title>
+      <meta name="title" content={website_title_without_special_chat} />
+      <meta name="og:title" content={website_title_without_special_chat} />
+      <meta name="twitter:title" content={website_title_without_special_chat} />
 
       <meta name="description" content={website_description} />
       <meta name="og:description" content={website_description} />
@@ -59,8 +61,8 @@ export default function Welcome() {
       position: 'relative',
       padding: '0 var(--basis_x4)',
     }}>
-      <Decoration />
-      <Decoration />
+      <Decoration overwrite_pos_class="pos_top_left" />
+      <Decoration overwrite_pos_class="pos_middle_right" />
       {/* <NavLink to="/"><button>Hi!</button></NavLink> */}
       <a href={join_link_href} target="_blank" rel="noreferrer"><button>
         <Localized id="join_link" />
