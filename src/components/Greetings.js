@@ -51,7 +51,14 @@ let decorations_tmp = [
 ]
   .map(async decoration => await lazyLoadImage(`decorations/volt/${decoration}`))
 
-function Decoration() {
+export function Decoration({
+  pos_classes = [
+    'pos_top_left',
+    'pos_top_right',
+    'pos_middle_right',
+    'pos_middle_left',
+  ]
+}) {
   const [decorationSrc, setDecorationSrc] = useState([])
   const [pos_class, setPosClass] = useState('pos_1')
   const [animation_delay, setAnimationDelay] = useState('0s')
@@ -62,12 +69,6 @@ function Decoration() {
       const random_decoration = fisherYatesShuffel([...decorations])[0]
       setDecorationSrc(random_decoration)
 
-      const pos_classes = [
-        'pos_top_left',
-        'pos_top_right',
-        'pos_middle_right',
-        'pos_middle_left',
-      ]
       const random_pos_class = fisherYatesShuffel(pos_classes)[0]
       setPosClass(random_pos_class)
 
@@ -78,7 +79,7 @@ function Decoration() {
       const random_animation_duration = 2 + ((Math.round(Math.random() * 10) * 0.1) * 2)
       setAnimationDuration(random_animation_duration)
     })
-  }, [])
+  }, [pos_classes])
 
   return <div
     alt=""
@@ -128,8 +129,10 @@ const links_volt_sh = [
 let greetings_data = [
   {
     key: 'Kiel',
-    title: '💜 Liebe überwindet Wellen – Happy Valentine’s Day, Europa! 🌊',
-    text: `Von der Kieler Förde bis in jeden Winkel Europas: Heute feiern wir die Liebe, die uns verbindet, über Grenzen, Kulturen und Meere hinweg. Denn echte Liebe kennt keine Grenzen! 💜🌍`,
+    title: '💜 Liebe überwindet Wellen',
+    text: `Von der Kieler Förde bis in jeden Winkel Europas: Heute feiern wir die Liebe, die uns verbindet, über Grenzen, Kulturen und Meere hinweg. Denn echte Liebe kennt keine Grenzen! 💜🌍
+
+    <strong>Happy Valentine’s Day, Europa! 🌊</strong>`,
     images: ['WhatsApp Image 2025-02-14 at 12.24.37.jpeg'],
     links: [
       {
@@ -572,7 +575,10 @@ export default function Wishes() {
         <div className="text">
           <Decoration />
           <h2>{greeting.title}</h2>
-          {greeting.text.split('\n').filter(Boolean).map((t, i) => <p key={i}>{t}</p>)}
+          {greeting.text
+            .split('\n')
+            .filter(Boolean)
+            .map((t, i) => <p key={i} dangerouslySetInnerHTML={{ __html: t }} />)}
           {
             greeting.links.length > 0
               ? <div className="links">

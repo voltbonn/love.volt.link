@@ -77,9 +77,11 @@
 
   --blur: 20px;
 
-  --timing: .2s ease-in-out;
+  --timing: 0.2s ease-in-out;
 
-  --font-family: 'Ubuntu', 'Noto Kufi Arabic', 'Geeza Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-family: "Ubuntu", "Noto Kufi Arabic", "Geeza Pro", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
 
   --basis: 1rem;
   --basis_x0_5: calc(var(--basis) * 0.5);
@@ -111,7 +113,6 @@
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
-
 
 /*
 :root {
@@ -155,7 +156,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-family-text);
-  transition: color .2s ease, background-color .2s ease;
+  transition: color 0.2s ease, background-color 0.2s ease;
   padding-block-end: 25vh;
   overflow-x: hidden;
 }
@@ -169,14 +170,14 @@ h1 {
 }
 @media (max-width: 700px) {
   h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 
 h2 {
   font-family: var(--font-family-headline);
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 40px;
 }
 
@@ -187,12 +188,19 @@ h3 {
   letter-spacing: 0px;
 }
 
-body, p {
+body,
+p {
   font-family: var(--font-family-text);
   font-weight: normal;
   font-size: 22px;
   letter-spacing: 0.5px;
   line-height: 1.2;
+}
+@media (max-width: 700px) {
+  body,
+  p {
+    font-size: 20px;
+  }
 }
 
 .body2 {
@@ -215,14 +223,14 @@ button {
   font-weight: bold;
   cursor: pointer;
 
-	padding: 10px 20px;
-	border-radius: 0;
-	color: var(--background-color);
-	fill: var(--background-color);
-	background: var(--text-color);
+  padding: 10px 20px;
+  border-radius: 0;
+  color: var(--background-color);
+  fill: var(--background-color);
+  background: var(--text-color);
   box-shadow: 10px 10px 0 0 var(--purple-dark);
-	font-weight: bold;
-	transition: box-shadow 0.2s ease;
+  font-weight: bold;
+  transition: box-shadow 0.2s ease;
 }
 button.text_red {
   color: var(--red);
@@ -253,7 +261,7 @@ button[data-selected="true"] {
 }
 button:not(:disabled):hover {
   box-shadow: 5px 5px 0 0 var(--purple-dark);
-	text-decoration: none;
+  text-decoration: none;
 }
 button.small:not(:disabled):hover {
   box-shadow: 5px 5px 0 0 var(--purple-dark);
@@ -263,7 +271,7 @@ button:not(:disabled):focus,
 button:not(:disabled).active,
 a.active button:not(:disabled) {
   box-shadow: 0 0 0 0 var(--purple-dark);
-	text-decoration: none;
+  text-decoration: none;
 }
 button:disabled {
   opacity: 0.5;

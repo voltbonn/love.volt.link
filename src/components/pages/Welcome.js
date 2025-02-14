@@ -1,10 +1,10 @@
-import '../../fonts/ubuntu-v20-latin/index.css'
+import '../../fonts/ubuntu-v20-latin/index.css';
 
-import { Outlet } from 'react-router-dom' // Link, NavLink
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet';
+import { Outlet } from 'react-router-dom'; // Link, NavLink
 
-import { Localized, useLocalization } from '../../fluent/Localized.js'
-import Greetings from '../Greetings.js'
+import { Localized, useLocalization } from '../../fluent/Localized.js';
+import Greetings, { Decoration } from '../Greetings.js';
 
 export default function Welcome() {
 
@@ -40,10 +40,6 @@ export default function Welcome() {
 
     </header>
 
-    <br />
-    <br />
-    <br />
-
     <div className="intro_letter">
       <Localized
         id="into_text"
@@ -55,20 +51,28 @@ export default function Welcome() {
           // eslint-disable-next-line
           h2: <h2 style={{ marginBlockEnd: '20px' }} />,
         }}
-        />
+      />
     </div>
 
     <nav style={{
       marginBlockEnd: 'var(--basis_x4)',
+      position: 'relative',
+      padding: '0 var(--basis_x4)',
     }}>
+      <Decoration pos_classes={[
+        'pos_top_left',
+        'pos_middle_left',
+      ]} />
+      <Decoration pos_classes={[
+        'pos_top_right',
+        'pos_middle_right',
+      ]} />
       {/* <NavLink to="/"><button>Hi!</button></NavLink> */}
       <a href={join_link_href} target="_blank" rel="noreferrer"><button>
         <Localized id="join_link" />
       </button></a>
       {/* <NavLink to="follow"><button>Follow</button></NavLink> */}
     </nav>
-
-    <br />
 
     <Greetings />
 
